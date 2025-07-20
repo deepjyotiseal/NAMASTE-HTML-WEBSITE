@@ -46,6 +46,8 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Reviews style  -->
+	<link rel="stylesheet" href="css/reviews.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -264,6 +266,109 @@
 		</div>
 	</div>
 
+	<!-- Reviews Section -->
+	<div id="fh5co-reviews" class="fh5co-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 reviews-heading animate-box">
+					<h2>What Our Customers Say</h2>
+					<p>Experience the authentic taste of India through the words of our valued customers</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<!-- Overall Rating Section -->
+				<div class="col-md-5 animate-box" data-animate-effect="fadeInLeft">
+					<div class="overall-rating-section">
+						<div class="overall-rating-number" id="overall-rating">4.5</div>
+						<div class="overall-rating-stars" id="overall-stars">
+							<i class="icon-star" style="color: #8B4513;"></i>
+							<i class="icon-star" style="color: #8B4513;"></i>
+							<i class="icon-star" style="color: #8B4513;"></i>
+							<i class="icon-star" style="color: #8B4513;"></i>
+							<i class="icon-star-half" style="color: #8B4513;"></i>
+						</div>
+						<div class="overall-rating-text">
+							Based on <span id="total-reviews">2</span> reviews
+						</div>
+						<button id="give-rating-btn" class="give-rating-btn">Give Us a Rating</button>
+					</div>
+				</div>
+
+				<!-- Individual Reviews Section -->
+				<div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
+					<div class="individual-reviews-section">
+						<h3>Customer Reviews</h3>
+						<div id="reviews-list">
+							<!-- Default reviews as fallback - will be replaced by JavaScript -->
+							<div class="review-item animate-box">
+								<div class="review-header">
+									<h5>Priya Sharma</h5>
+									<div class="review-stars">
+										<i class="icon-star" style="color: #8B4513;"></i>
+										<i class="icon-star" style="color: #8B4513;"></i>
+										<i class="icon-star" style="color: #8B4513;"></i>
+										<i class="icon-star" style="color: #8B4513;"></i>
+										<i class="icon-star" style="color: #8B4513;"></i>
+									</div>
+									<span class="review-date">December 15, 2024</span>
+								</div>
+								<p class="review-text">Amazing authentic Indian chai! The masala chai tastes exactly like what my grandmother used to make. The ambiance is perfect for a cozy evening. Highly recommended!</p>
+							</div>
+							
+							<div class="review-item animate-box">
+								<div class="review-header">
+									<h5>David Rodriguez</h5>
+									<div class="review-stars">
+										<i class="icon-star" style="color: #8B4513;"></i>
+										<i class="icon-star" style="color: #8B4513;"></i>
+										<i class="icon-star" style="color: #8B4513;"></i>
+										<i class="icon-star" style="color: #8B4513;"></i>
+										<i class="icon-star-o" style="color: #D2B48C;"></i>
+									</div>
+									<span class="review-date">December 10, 2024</span>
+								</div>
+								<p class="review-text">Great place for Indian breakfast! The dosas are crispy and perfectly prepared. The filter coffee is exceptional. Staff is very friendly and welcoming.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Review Modal -->
+	<div id="reviewModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h3>Share Your Experience</h3>
+			
+			<div class="form-group">
+				<label for="reviewer-name">Your Name</label>
+				<input type="text" id="reviewer-name" placeholder="Enter your name">
+			</div>
+			
+			<div class="form-group">
+				<label for="review-description">Tell us about your experience</label>
+				<textarea id="review-description" placeholder="Share your thoughts about our café..."></textarea>
+			</div>
+			
+			<div class="star-rating">
+				<label>Rate your experience</label>
+				<div class="modal-stars">
+					<i class="icon-star modal-star"></i>
+					<i class="icon-star modal-star"></i>
+					<i class="icon-star modal-star"></i>
+					<i class="icon-star modal-star"></i>
+					<i class="icon-star modal-star"></i>
+				</div>
+			</div>
+			
+			<input type="hidden" id="selected-rating" value="">
+			<button id="submit-review" class="submit-btn">Submit Review</button>
+		</div>
+	</div>
+
 	<footer id="fh5co-footer" role="contentinfo" class="fh5co-section">
 		<div class="container">
 			<div class="row row-pb-md">
@@ -339,6 +444,8 @@
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<!-- Reviews -->
+	<script src="js/reviews.js"></script>
 
 	</body>
 </html>
