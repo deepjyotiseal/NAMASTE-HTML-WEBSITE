@@ -1,0 +1,32 @@
+---
+# GitHub Pages Configuration
+title: "Namaste Café - Authentic Indian Flavors in Brooklyn"
+description: "Experience authentic Indian chai, street food, and fusion dishes at Brooklyn's premier Indian café"
+
+# GitHub Pages Settings
+plugins:
+  - jekyll-relative-links
+
+# Asset settings for GitHub Pages
+kramdown:
+  input: GFM
+  hard_wrap: false
+  
+# Include these files/folders
+include:
+  - css/
+  - js/
+  - images/
+  - fonts/
+  
+# Exclude from processing
+exclude:
+  - sass/
+  - README.md
+  - LICENSE
+  
+# GitHub Pages baseurl (leave empty for user/organization pages)
+baseurl: ""
+
+# Force HTTPS
+enforce_ssl: true
